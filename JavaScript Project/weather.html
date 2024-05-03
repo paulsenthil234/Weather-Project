@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="main">
+        <h1 style="text-align: center; text-decoration: underline;">Weather Forecast</h1>
+        <input id="searchInput" style="font-size: 20px; width: 25%; margin-left: 38%; margin-top: 30px; border: 0; border-radius: 50px; padding: 5px;" type="search" placeholder="Search the weather for your city">
+        <div>
+            <button type="button" style="font-size: 20px; padding: 5px; border: 1px solid blue; font-weight: bold; border-radius: 5px; margin-left: 47%; margin-top: 30px;" onclick="checkWeather()">Estimate</button>
+        </div>
+        <div class="parent1">
+        <div class="submain1">
+            <h2 style="text-align: center; color: rgb(0, 0, 0);">Weather Report</h2>
+            <hr width="90%" style="margin-left: 5%;">
+            <div class="parent">
+                <div class="child1">
+                    <img class="image1" src="images/picture-of-real-sun-the-color-of-fire-red-21.png" alt="" height="100px">
+                    <h1 id="degree" ></h1>
+                    <h2 id="feelsLike"></h2>
+                </div>
+                <div class="child2">
+                    <span id="city" style="font-size: 30px; font-weight: bold;"></span><span id="country" style="font-size: 30px; font-weight: bold;"></span>
+                    <h2 id="tempCelsius"></h2>
+                    <h2 id="tempFarenheit"></h2>
+                    <h2 id="pressure"></h2>
+                    <h2 id="humidity"></h2>
+                </div>
+            </div>
+        </div>
+        <div class="submain2">
+                <h2 style="text-align: center; color: rgb(0, 0, 0); font-family: Verdana, Geneva, Tahoma, sans-serif;">Sea Forecast Report</h2>
+                <hr width="95%" style="margin-left: 3%;">
+                <div class="parent">
+                    <div class="child1">
+                        <img class="image2" src="images/wave_16x9.avif" alt="" height="100px" style="border-radius: 5px; opacity: 1;">
+                        <h2 id="seaLevel"></h2>
+                        <h2 id="groundLevel"></h2>
+                    </div>
+                    <div class="child2">
+                        <h2 id="windSpeed"></h2>
+                        <h2 id="windGust"></h2>
+                        <h2 id="cloud"></h2>
+                        <h2 id="windDegree"></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
