@@ -24,7 +24,6 @@ function checkWeather(){
         else
             return "South-East";
     }
-    // console.log(cityTo);
     let urls = "https://api.openweathermap.org/data/2.5/weather?q="+cityTo+"&appid=dbd118f426a71be39e8f315552bc477c";
     fetch(urls).then((res1=>res1.json()))
     .then((res2)=>{
